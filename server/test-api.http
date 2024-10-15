@@ -1,0 +1,42 @@
+###
+GET http://localhost:3001/api/remaining-time
+###
+
+GET http://localhost:3001/api/result
+### test placing bet
+POST http://localhost:3001/api/bets
+Content-Type: application/json
+
+{
+    "numbers": [25,8,10]
+}
+
+### test login
+
+POST http://localhost:3001/api/sessions
+Content-Type: application/json
+
+{
+    "username": "john@hi.com",
+    "password": "testjohn"
+}
+
+### get top 3 players
+GET http://localhost:3001/api/top-players
+
+### get the results
+GET http://localhost:3001/api/results
+
+
+### test current session
+GET http://localhost:3001/api/sessions/current
+
+
+### test logout
+DELETE http://localhost:3001/api/sessions/current
+
+### get history of user bets
+GET http://localhost:3001/api/history
+
+### get the last draw numbers
+GET http://localhost:3001/api/last-draw
