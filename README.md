@@ -1,6 +1,9 @@
 
 #  "Instant Lottery"
 
+An online Instant Lottery web application, developed using JavaScript, React, Node.js, and SQLite;
+where logged-in users can place bets on periodically drawn numbers. Every 2 minutes, 5 distinct random numbers (1-90) are drawn, and all players see the same numbers. Players can bet on 1-3 numbers, using points as currency (5, 10, or 15 points per bet). Each player starts with 100 points, and their balance only increases through winning bets. Once a player runs out of points, they can no longer bet. Non-logged users see the game rules and a login form.
+
 ## React Client Application Routes
 
 - Route `/`: it is the parent route that includes DashboardLayout component and its children, it is the main page of app, if the user is not logged in it redirects to `/login`
